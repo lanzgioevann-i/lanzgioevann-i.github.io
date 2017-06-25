@@ -2,7 +2,7 @@ var loaded;
 
 /*PRE LOADER*/
 $(window).load(function() {
-	$('.preloader-background').delay(1700).fadeOut('slow');
+	$('.preloader-background').delay(2000).fadeOut('slow');
 	
 	$('.preloader-wrapper')
 		.delay(1700)
