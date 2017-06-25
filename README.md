@@ -1,0 +1,1 @@
+# lazygeniuslanz.github.io
