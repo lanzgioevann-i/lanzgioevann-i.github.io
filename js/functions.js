@@ -1,3 +1,5 @@
+var loaded;
+
 /*PRE LOADER*/
 $(window).load(function() {
 	$('.preloader-background').delay(1700).fadeOut('slow');
@@ -9,6 +11,14 @@ $(window).load(function() {
 	setTimeout(function(){
 		$('#content').addClass("content-show");
 		$('#content').removeClass("content-hide");
+		
+		loaded = true;
+		
+		setTimeout(function() {
+		$(window).scrollTop($(window).scrollTop() - 1);
+	}, 500);
+		
+		
 	}, 1200);
 });
 
@@ -19,7 +29,7 @@ function navshow(){
 	var div_top = $('#nav-line').offset().top;
 	/*
 	*/
-	if(window_top > div_top){ 
+	if(window_top > div_top && loaded){ 
 		$('#navbar').addClass('shownav');
 		$('#navbar').removeClass('hidenav');
 	}
@@ -35,7 +45,7 @@ function skillshow(){
 	var div_top = $('#skill-line').offset().top;
 	/*
 	*/
-	if(window_top > div_top){
+	if(window_top > div_top && loaded){
 		$('#skill-cs').addClass('skill-cs');
 		$('#skill-java').addClass('skill-java');
 		$('#skill-sql').addClass('skill-sql');
@@ -55,7 +65,7 @@ function workshow(){
 	
 	var enrapture_top = $('#work-enrapture-line').offset().top;
 	
-	if(window_top > (enrapture_top - 100)){
+	if(window_top > (enrapture_top - 100) && loaded){
 		$('#work-enrapture').addClass('active');
 	}
 	else{
@@ -64,7 +74,7 @@ function workshow(){
 	
 	var spdr_top = $('#work-spdr-line').offset().top;
 	
-	if(window_top > (spdr_top - 100)){
+	if(window_top > (spdr_top - 100) && loaded){
 		$('#work-spdr').addClass('active');
 	}
 	else{
