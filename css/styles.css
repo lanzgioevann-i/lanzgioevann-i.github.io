@@ -6,6 +6,7 @@ body{
 
 html{
 	overflow-x: hidden;
+	font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
 /* HEADER */
@@ -175,7 +176,7 @@ html{
    
    
 	position: fixed;
-	top: 80vh;
+	top: 20vh;
 	z-index: 10000;
 }
 .preloader5 span {

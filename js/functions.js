@@ -25,15 +25,7 @@ $(window).load(function() {
 					$('.preloader-background').delay(0).fadeOut('slow');
 					
 					loaded = true;
-					
-					setTimeout(function(){
-						
-						new TypeWriter($("#typed-header"), {
-							"data": ["O>>>ne plus one |i>>>s not the only way to get a two.| T>>>here isn't only one way| >>>to reach your goals.|"]
-						})
-						
-					}, 100);
-					
+										
 					//setTimeout(function() { $(window).scrollTop($(window).scrollTop() - 1); }, 500);
 					
 				}, 100); //remove preloader background
