@@ -2,11 +2,11 @@ var loaded;
 
 /*PRE LOADER*/
 $(window).load(function() {
+	alert('loaded!');
 	var delayload = 3000;
 	
 	setTimeout(function() {
 		$('#typed-loading').addClass("content-hide");
-		
 		
 		setTimeout(function() {
 			$('#typed-loading').addClass("content-hide2");
@@ -14,7 +14,7 @@ $(window).load(function() {
 			$('#typed-loaded').addClass("content-show");
 			
 			new TypeWriter($("#typed-loaded"), {
-				"data": ["O>>>h! I>>ts loaded!| B>>>ye! |"]
+				"data": ["O>>>h! Its loaded!| B>>>ye! |"]
 			})
 			
 		}, 100);
@@ -27,9 +27,7 @@ $(window).load(function() {
 		
 		$('.preloader-background').delay(delayload).fadeOut('slow');
 	
-		$('.preloader-wrapper')
-			.delay(delayload)
-			.fadeOut();
+		$('.preloader-wrapper').delay(delayload).fadeOut();
 			
 		setTimeout(function(){
 			$('#content').addClass("content-show");
