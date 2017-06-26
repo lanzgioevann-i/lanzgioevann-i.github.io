@@ -47,16 +47,18 @@
 	<body>
 		
 		<div class="preloader-background">
-			
 			<div class="preloader5">
 				<span></span>
 				<span></span>
 				<span></span>
 			</div>
-			
+			<div class="container center">
+				<h1 class="white-text" id="typed-loading"></h1>
+				<h1 class="white-text" id="typed-loaded"></h1>
+			</div>
 		</div>
 
-		<div class="content-hide" id="content">
+		<div class="content-hide content-hide2" id="content">
 
 		<header>
 		
@@ -96,11 +98,10 @@
 						<div class="row">
 							<div id="header-content">
 								<div class="col s5 m5 l5 xl5 right-align blue-text">
-									
 									<img src="img/lanz-head.png" class="responsive-img">
 								</div>
 								<div class="col s7 m7 l7 xl7 white-text">
-									<h1 id="typed"></h1>
+									<h1 id="typed-header"></h1>
 								</div>
 							</div>
 							<div id="nav-line"></div>
@@ -110,6 +111,7 @@
 			</div>
 			
 		  </div>
+		  
 		</header>
 		
 		<section>
@@ -225,9 +227,10 @@
 					<div class="section">
 
 						<div class="row">
+						
 							<div class="col s12 m6 l6 xl6">
 							
-								<h1>Skills<hr class="style12"></h1>
+								<h1>Computer Skills<hr class="style12"></h1>
 								<p class="left-align light justify-text">I want to attain a position where I can maximize and utilize my knowledge in programming, developing software, administrating databases, and graphic designing to gratify the company’s needs for its profit, opportunities, and growth.</p>
 							
 							</div>
@@ -297,8 +300,9 @@
 								
 							</div>
 							
-							
 						</div>
+						
+						
 					</div>
 				</div>
 			</div>
@@ -453,10 +457,13 @@ Answers to the equation varies with the difficulty selected by the player so eve
 		
 		<!--SCRIPTS-->
 		<script>
-		new TypeWriter($("#typed"), {
+		new TypeWriter($("#typed-header"), {
 			"data": ["O>>>ne plus one |i>>>s not the only way to get a two.| T>>>here isn't only one way| >>>to reach your goals.|"]
 		})
-
+		
+		new TypeWriter($("#typed-loading"), {
+			"data": ["I>>>ts still loading?|", "Oh! |", "H>>ello there! |", "I>> know it is taking a while. |", "B>>ut I promise | i>>t will be worth it! |", "J>>ust take a sip on your coffee. |", "O>>r just make a stretch. |", "W>>e will be there soon! |"]
+		})
 		</script>
 		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.js"></script>
