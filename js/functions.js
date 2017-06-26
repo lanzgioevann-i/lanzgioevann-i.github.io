@@ -2,24 +2,49 @@ var loaded;
 
 /*PRE LOADER*/
 $(window).load(function() {
-	$('.preloader-background').delay(2000).fadeOut('slow');
+	var delayload = 3000;
 	
-	$('.preloader-wrapper')
-		.delay(1700)
-		.fadeOut();
+	setTimeout(function() {
+		$('#typed-loading').addClass("content-hide");
 		
-	setTimeout(function(){
-		$('#content').addClass("content-show");
-		$('#content').removeClass("content-hide");
-		
-		loaded = true;
 		
 		setTimeout(function() {
-		$(window).scrollTop($(window).scrollTop() - 1);
-	}, 500);
+			$('#typed-loading').addClass("content-hide2");
+			
+			$('#typed-loaded').addClass("content-show");
+			
+			new TypeWriter($("#typed-loaded"), {
+				"data": ["O>>>h! I>>ts loaded!| B>>>ye! |"]
+			})
+			
+		}, 100);
+			
 		
+	}, 2000);
+	
+	
+	setTimeout(function() {
 		
-	}, 1200);
+		$('.preloader-background').delay(delayload).fadeOut('slow');
+	
+		$('.preloader-wrapper')
+			.delay(delayload)
+			.fadeOut();
+			
+		setTimeout(function(){
+			$('#content').addClass("content-show");
+			$('#content').removeClass("content-hide");
+			
+			loaded = true;
+			
+			//setTimeout(function() { $(window).scrollTop($(window).scrollTop() - 1); }, 500);
+			
+			
+		}, 2000); //load content
+		
+	}, delayload ); //remove preloader
+	
+	
 });
 
 /* NAV BAR */

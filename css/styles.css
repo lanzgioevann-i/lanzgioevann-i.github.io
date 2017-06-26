@@ -155,10 +155,14 @@ html{
 .content-hide {
 	visibility: hidden;
 	opacity: 0;
+	transition: opacity 0.5s, visibility 1s;
+}
+
+.content-hide2{
+	display: none;
 }
 
 .content-show{
-	visibility: visible;
     opacity: 1;
     transition: opacity 1s, visibility 1s;
 	display: block;
@@ -168,6 +172,11 @@ html{
    display:inline-block;
    font-size:0px;
    padding:0px;
+   
+   
+	position: fixed;
+	top: 80vh;
+	z-index: 10000;
 }
 .preloader5 span {
    vertical-align:middle;
