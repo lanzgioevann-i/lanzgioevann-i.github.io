@@ -2,47 +2,51 @@ var loaded;
 
 /*PRE LOADER*/
 $(window).load(function() {
-	alert('loaded!');
-	var delayload = 3000;
+	//alert('loaded!');
 	
 	setTimeout(function() {
-		$('#typed-loading').addClass("content-hide");
-		
+		$('#typed-loading').addClass("content-hide"); //remove type loading as display: none
+		//alert('hide type loading');
 		setTimeout(function() {
 			$('#typed-loading').addClass("content-hide2");
-			
+			//alert('hshow type loaded');
 			$('#typed-loaded').addClass("content-show");
 			
 			new TypeWriter($("#typed-loaded"), {
 				"data": ["O>>>h! Its loaded!| B>>>ye! |"]
 			})
 			
-		}, 100);
+			setTimeout(function() {
+				/****************HIDE PRE LOADER****************/
+				$('#content').addClass("content-show"); //load content
+				$('#content').removeClass("content-hide"); 
+				
+				setTimeout(function(){
+					$('.preloader-background').delay(0).fadeOut('slow');
+					
+					loaded = true;
+					
+					setTimeout(function(){
+						
+						new TypeWriter($("#typed-header"), {
+							"data": ["O>>>ne plus one |i>>>s not the only way to get a two.| T>>>here isn't only one way| >>>to reach your goals.|"]
+						})
+						
+					}, 100);
+					
+					//setTimeout(function() { $(window).scrollTop($(window).scrollTop() - 1); }, 500);
+					
+				}, 100); //remove preloader background
+				/*******************************************/
+			}, 4000); //hide preloader
 			
-		
-	}, 2000);
+		}, 500); //show type loaded
+			
+	}, 3000); //hide type loading
 	
+	/*
 	
-	setTimeout(function() {
-		
-		$('.preloader-background').delay(delayload).fadeOut('slow');
-	
-		$('.preloader-wrapper').delay(delayload).fadeOut();
-			
-		setTimeout(function(){
-			$('#content').addClass("content-show");
-			$('#content').removeClass("content-hide");
-			
-			loaded = true;
-			
-			//setTimeout(function() { $(window).scrollTop($(window).scrollTop() - 1); }, 500);
-			
-			
-		}, 2000); //load content
-		
-	}, delayload ); //remove preloader
-	
-	
+	*/
 });
 
 /* NAV BAR */
