@@ -13,7 +13,7 @@ $(window).load(function() {
 			$('#typed-loaded').addClass("content-show");
 			
 			new TypeWriter($("#typed-loaded"), {
-				"data": ["O>>>h! Its loaded!| B>>>ye! |"]
+				"data": ["I>>>ts loaded!| B>>>ye! |"]
 			})
 			
 			setTimeout(function() {

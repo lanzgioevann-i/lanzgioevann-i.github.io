@@ -15,14 +15,14 @@ html{
 }
 
 .header{
-  position:absolute;
-  top:50%;
-  width:100%;
-  color:#fff;
-  font-size: 2em;
-  -ms-transform: translate(0,-50%); /* IE 9 */
-   	-webkit-transform: translate(0,-50%); /* Safari */
-    transform: translate(0,-50%);  
+	position:absolute;
+	top:50%;
+	width:100%;
+	color:#fff;
+	font-size: 2em;
+	-ms-transform: translate(0,-50%); /* IE 9 */
+	-webkit-transform: translate(0,-50%); /* Safari */
+	transform: translate(0,-50%);  
 
 }
 
