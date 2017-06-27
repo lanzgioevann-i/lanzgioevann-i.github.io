@@ -93,7 +93,7 @@ function workshow(){
 	
 	var spdr_top = $('#work-spdr-line').offset().top;
 	
-	if(window_top > (spdr_top - 100) && loaded){
+	if(window_top > (spdr_top -300) && loaded){
 		$('#work-spdr').addClass('active');
 	}
 	else{
