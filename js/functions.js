@@ -34,7 +34,7 @@ $(window).load(function() {
 			
 		}, 500); //show type loaded
 			
-	}, 3000); //hide type loading
+	}, 10); //hide type loading
 	
 	/*
 	
@@ -113,6 +113,7 @@ $(document).ready(function(){
   $('.scrollspy').scrollSpy();
   $(".button-collapse").sideNav();
   $('.materialboxed').materialbox();
+  $(".dropdown-button").dropdown();
 });
 
 /* HEADER */
