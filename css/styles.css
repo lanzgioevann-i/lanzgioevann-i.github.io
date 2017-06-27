@@ -7,10 +7,58 @@ body{
 html{
 	overflow-x: hidden;
 	font-family: GillSans, Calibri, Trebuchet, sans-serif;
+	
+	background: url(../img/header.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+/*
+@media only screen and (min-width: 992px) {
+	html { 
+		background: url(img/header.gif) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	html { 
+		background: url(img/header.png) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+*/
+
+video { 
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url('../img/header.png') no-repeat;
+	background-size: cover;
+	-webkit-transition: 1s opacity;
+	transition: 1s opacity;
+}
+
+.stopfade { 
+   opacity: .5;
 }
 
 /* HEADER */
-#hero{
+#header-container{
   background-size:cover;
   position:relative;
 }
@@ -31,13 +79,7 @@ html{
     #header-content h1{
         font-size: 2em;
     }
-	
-	#typed-strings h1{
-        font-size: 2em;
-		
-	}
 }
-
 @media only screen and (max-width: 990px) {
     #header-content h1{
         font-size: 1.7em;
@@ -101,9 +143,10 @@ html{
 }
 
 .dark{
-	
+	background-color: #262626 !important;
 }
 
+/* FOOTER */
 .lanz-footer{
 	background-color: rgba(59,59,59,0.2);
 	height: 70vh;
@@ -140,19 +183,6 @@ html{
 }
 
 /* PRE LOADER */
-.preloader-background {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #262626;
-	position: fixed;
-	z-index: 100;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;	
-}
-
 .content-hide {
 	visibility: hidden;
 	opacity: 0;
@@ -167,6 +197,19 @@ html{
     opacity: 1;
     transition: opacity 1s, visibility 1s;
 	display: block;
+}
+
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #262626;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
 }
 
 .preloader5 {
@@ -214,25 +257,28 @@ html{
 
 /* NAV BAR */
 #navbar {
-	margin-top: -9vh;
+	margin-top: -10vh;
 	position: fixed;
 	top: 0;
 	z-index: 10000;
 	transition: all 0.5s ease-in-out;
-	opacity: 0.5;
+	opacity: 0;
 }
 
 #navbar.shownav{
 	margin-top: 0vh;
-	opacity: 1;
+	opacity: 0.98;
 }
 
 #navbar.hidenav{
-	margin-top: -9vh;
-	opacity: 0.5;
+	margin-top: -10vh;
+	opacity: 0;
 }
 
-
+.navbar-container{
+	margin: 0 auto;
+	width: 85%;
+}
 
 
 /* PARALLAX */

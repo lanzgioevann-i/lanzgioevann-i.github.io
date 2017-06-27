@@ -11,7 +11,6 @@
 		<!--Import materialize.css-->
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
 		
-		
 		<!--Font awesome-->
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -22,39 +21,14 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/typewriter.js" type="text/javascript"></script>
 		
-		<!-- images anim -->
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!-- photo stack -->
+		<link rel="stylesheet" type="text/css" href="css/photostack.css" />
 		
 		<!--Self CSS-->
 		<link href="css/styles.css" type="text/css" rel="stylesheet" />
 		
 		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 		
-		<style>
-		* { margin: 0; padding: 0; }
-		
-		@media only screen and (min-width: 992px) {
-			html { 
-				background: url(img/header.gif) no-repeat center center fixed; 
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-			}
-		}
-		
-		@media only screen and (max-width: 991px) {
-			html { 
-				background: url(img/header.png) no-repeat center center fixed; 
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-			}
-		}
-		
-		
-		</style>
 		
 	</head>
 
@@ -73,400 +47,406 @@
 		</div>
 
 		<div class="content-hide content-hide2" id="content">
-
-		<header>
 		
-		  <div class="section scrollspy" id="ss-first">
-		  
-			<nav id="navbar" class="white">
-				<div class="container">
-				<div class="nav-wrapper">
-					<a href="#ss-first" class="brand-logo dark-text hide-on-med-only center-when-small-dev">lazygeniuslanz</a>
-					<!--
-					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-					<ul class="side-nav" id="mobile-demo">
-						<li><a href="#ss-second" class="dark-text">Link 1</a></li>
-						<li><a href="#ss-third" class="dark-text">Link 2</a></li>
-						<li><a href="#ss-fourth" class="dark-text">Skills</a></li>
-						<li><a href="#ss-fifth" class="dark-text">Works</a></li>
-						<li><a href="file/Resume.pdf" class="dark-text" download>Resume</a></li>
-					</ul>
-					-->
-					<ul id="nav-mobile" class="right hide-on-small-only">
-						<!--<li><a href="#ss-first" class="dark-text hide-on-small-only hide-on-large-only">Home</a></li>-->
-						<li><a href="#ss-second" class="dark-text">My Self</a></li>
-						<li><a href="#ss-third" class="dark-text">Link 2</a></li>
-						<li><a href="#ss-fourth" class="dark-text">Skills</a></li>
-						<li><a href="#ss-fifth" class="dark-text">Works</a></li>
-						<li><a href="#ss-sixth" class="dark-text">Contact</a></li>
-						<li><a href="file/Resume.pdf" class="waves-effect waves-light btn transparent z-depth-0 rounded-btn dark-text" download>Resume</a></li>
-					</ul>
-				</div>
-				</div>
-			</nav>
-			
-			
-			<div id="hero">
-				<div class="header">
-					<div class="container">
-						<div class="row">
-							<div id="header-content">
-								<div class="col s5 m5 l5 xl5 right-align blue-text">
-									<img src="img/lanz-head.png" class="responsive-img">
-								</div>
-								<div class="col s7 m7 l7 xl7 white-text">
-									<h1>One plus one is not the only way to get a two. There isn't only one way to reach your goals.</h1>
-								</div>
-							</div>
-							<div id="nav-line"></div>
-						</div>
-					</div>
-				</div>
+			<div class="">
+			<video poster="img/header.png" id="bgvid" playsinline autoplay muted loop>
+				<source src="img/header.mp4" type="video/mp4">
+				<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+			</video>
 			</div>
 			
-		  </div>
-		  
-		</header>
-		
-		<section>
-		
-		
-			<!-- ABOUT ME -->
-			<div class="white section scrollspy" id="ss-second">
-				<div class="container">
+			<header>
+			
+			<div class="section scrollspy" id="ss-first">
+				<nav id="navbar" class="white">
+					<div class="navbar-container">
+					<div class="nav-wrapper">
+						<a href="#ss-first" class="brand-logo dark-text hide-on-med-only center-when-small-dev">lazygeniuslanz</a>
+						<!--
+						<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+						<ul class="side-nav" id="mobile-demo">
+							<li><a href="#ss-second" class="dark-text">Link 1</a></li>
+							<li><a href="#ss-third" class="dark-text">Link 2</a></li>
+							<li><a href="#ss-fourth" class="dark-text">Skills</a></li>
+							<li><a href="#ss-fifth" class="dark-text">Works</a></li>
+							<li><a href="file/Resume.pdf" class="dark-text" download>Resume</a></li>
+						</ul>
+						-->
+						<ul id="nav-mobile" class="right hide-on-small-only">
+							<!--<li><a href="#ss-first" class="dark-text hide-on-small-only hide-on-large-only">Home</a></li>-->
+							<li><a href="#ss-second" class="dark-text">My Self</a></li>
+							<li><a href="#ss-third" class="dark-text">Link 2</a></li>
+							<li><a href="#ss-fourth" class="dark-text">Skills</a></li>
+							<li><a href="#ss-fifth" class="dark-text">Works</a></li>
+							<li><a href="#ss-sixth" class="dark-text">Contact</a></li>
+							<li><a href="file/Resume.pdf" class="waves-effect waves-light btn transparent z-depth-0 rounded-btn dark-text" download>Resume</a></li>
+						</ul>
+					</div>
+					</div>
+				</nav>
 				
-					<div class="row">
-						<div class="col s12 m4 l4 xl4 right-align center-when-small-dev">
-							<h1>Lanz Gio<br>Evann Y. Irlanda</h1>
-							<hr class="style12">
-							<br>
-							<!--
+				<div id="header-container">
+					
+					<div class="header">
+						<div class="container">
 							<div class="row">
-								<div class="col s6">
-									<img class="responsive-img materialboxed" src="img/me/1.jpg">
-								</div>
-								<div class="col s6">
-									<div class="row">
-										<div class="col s6">
-										<img class="responsive-img materialboxed" src="img/me/2.jpg">
-										</div>
-										<div class="col s6">
-											<img class="responsive-img materialboxed" src="img/me/4.jpg">
-										</div>
+								<div id="header-content">
+									<div class="col s5 m5 l5 xl5 right-align blue-text">
+										<img src="img/lanz-head.png" class="responsive-img">
 									</div>
-									
-									<div class="row">
-										<div class="col s6">
-										<img class="responsive-img materialboxed" src="img/me/2.jpg">
-										</div>
-										<div class="col s6">
-											<img class="responsive-img materialboxed" src="img/me/4.jpg">
-										</div>
+									<div class="col s7 m7 l7 xl7 white-text">
+										<h1>One plus one is not the only way to get a two. There isn't only one way to reach your goals.</h1>
 									</div>
 								</div>
+								<div id="nav-line"></div>
 							</div>
-							-->
-							
-							<div class="row" style="z-index: -1000;">
-								<div class="col s3">
-									<img class="responsive-img materialboxed" src="img/me/1.jpg">
-								</div>
-								<div class="col s3">
-									<img class="responsive-img materialboxed" src="img/me/2.jpg">
-								</div>
-								<div class="col s3">
-									<img class="responsive-img materialboxed" src="img/me/3.jpg">
-								</div>
-								<div class="col s3">
-									<img class="responsive-img materialboxed" src="img/me/4.jpg">
-								</div>
-							</div>
-							
-						</div>
-						<div class="col s12 m8 l8 xl8 justify-text center-when-small-dev">
-							
-							<br>
-							<hr class="style12 hide-on-small-only">
-							<h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. </h5>
-							<h5>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus.</h5>
-							<br>	
-							<!--
-							<div class="row" style="z-index: -1000;">
-								<div class="col s3">
-									<img class="responsive-img materialboxed" src="img/me/1.jpg">
-								</div>
-								<div class="col s3">
-									<img class="responsive-img materialboxed" src="img/me/2.jpg">
-								</div>
-								<div class="col s3">
-									<img class="responsive-img materialboxed" src="img/me/3.jpg">
-								</div>
-								<div class="col s3">
-									<img class="responsive-img materialboxed" src="img/me/4.jpg">
-								</div>
-							</div>
-							-->
-							
 						</div>
 					</div>
 					
 				</div>
 			</div>
-	  
-			<!--  -->
-			<div class="parallax-container valign-wrapper section scrollspy" id="ss-third">
-				<div class="section no-pad-bot">
-					
+			  
+			</header>
+			
+			<section>
+			
+			
+				<!-- ABOUT ME -->
+				<div class="white section scrollspy" id="ss-second">
 					<div class="container">
+					
 						<div class="row">
-							<div id="header-content">
-								<div class="col s12 m5 l5 xl5 right-align blue-text">
-									<img src="img/lanz-head.png" class="responsive-img">
+							<div class="col s12 m4 l4 xl4 right-align center-when-small-dev">
+								<h1>Lanz Gio<br>Evann Y. Irlanda</h1>
+								<hr class="style12">
+								<br>
+								<!--
+								<div class="row">
+									<div class="col s6">
+										<img class="responsive-img materialboxed" src="img/me/1.jpg">
+									</div>
+									<div class="col s6">
+										<div class="row">
+											<div class="col s6">
+											<img class="responsive-img materialboxed" src="img/me/2.jpg">
+											</div>
+											<div class="col s6">
+												<img class="responsive-img materialboxed" src="img/me/4.jpg">
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col s6">
+											<img class="responsive-img materialboxed" src="img/me/2.jpg">
+											</div>
+											<div class="col s6">
+												<img class="responsive-img materialboxed" src="img/me/4.jpg">
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="col s12 m7 l7 xl7 white-text valign-wrapper center-when-small-dev">
-									<h1>Objective<br><div id="skill-line"></div>
-								<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,</h1>
+								-->
 								
+								<div class="row" style="z-index: -1000;">
+									<div class="col s3">
+										<img class="responsive-img materialboxed" src="img/me/1.jpg">
+									</div>
+									<div class="col s3">
+										<img class="responsive-img materialboxed" src="img/me/2.jpg">
+									</div>
+									<div class="col s3">
+										<img class="responsive-img materialboxed" src="img/me/3.jpg">
+									</div>
+									<div class="col s3">
+										<img class="responsive-img materialboxed" src="img/me/4.jpg">
+									</div>
+								</div>
+								
+							</div>
+							<div class="col s12 m8 l8 xl8 justify-text center-when-small-dev">
+								
+								<br>
+								<hr class="style12 hide-on-small-only">
+								<h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. </h5>
+								<h5>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus.</h5>
+								<br>	
+								<!--
+								<div class="row" style="z-index: -1000;">
+									<div class="col s3">
+										<img class="responsive-img materialboxed" src="img/me/1.jpg">
+									</div>
+									<div class="col s3">
+										<img class="responsive-img materialboxed" src="img/me/2.jpg">
+									</div>
+									<div class="col s3">
+										<img class="responsive-img materialboxed" src="img/me/3.jpg">
+									</div>
+									<div class="col s3">
+										<img class="responsive-img materialboxed" src="img/me/4.jpg">
+									</div>
+								</div>
+								-->
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+		  
+				<!--  -->
+				<div class="parallax-container valign-wrapper section scrollspy" id="ss-third">
+					<div class="section no-pad-bot">
+						
+						<div class="container">
+							<div class="row">
+								<div id="header-content">
+									<div class="col s12 m5 l5 xl5 right-align blue-text">
+										<img src="img/lanz-head.png" class="responsive-img">
+									</div>
+									<div class="col s12 m7 l7 xl7 white-text valign-wrapper center-when-small-dev">
+										<h1>Objective<br><div id="skill-line"></div>
+									<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,</h1>
+									
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="parallax"><img src="img/test.png" alt="Unsplashed background img 2"></div>
+				</div>
+				
+				<!-- SKILLS -->
+				<div class="white section scrollspy" id="ss-fourth">
+					<div class="container">
+						<div class="section">
+
+							<div class="row">
+							
+								<div class="col s12 m6 l6 xl6">
+								
+									<h1>Computer Skills<hr class="style12"></h1>
+									<p class="left-align light justify-text">I want to attain a position where I can maximize and utilize my knowledge in programming, developing software, administrating databases, and graphic designing to gratify the company’s needs for its profit, opportunities, and growth.</p>
+								
+								</div>
+								
+								<div class="col s12 m6 l6 xl6">
+								
+									<div class="hide-on-small-only">
+									<br><br><br><br>
+									</div>
+								
+									<div class="skill-container">
+										<div class="skill" id="skill-cs">
+											<span class="skill-title">C#</span>
+											<span class="skill-percent right">95%</span>
+										</div>
+									</div> <!-- end of skillbar -->
+									
+									<div class="skill-container">
+										<div class="skill" id="skill-java">
+											<span class="skill-title">JAVA</span>
+											<span class="skill-percent right">85%</span>
+										</div>
+									</div> <!-- end of skillbar -->
+									
+									<div class="skill-container">
+										<div class="skill" id="skill-sql">
+											<span class="skill-title">SQL</span>
+											<span class="skill-percent right">90%</span>
+										</div>
+									</div> <!-- end of skillbar -->
+									
+									
+									<div class="skill-container">
+										<div class="skill" id="skill-html">
+											<span class="skill-title">HTML</span>
+											<span class="skill-percent right">75%</span>
+										</div>
+									</div> <!-- end of skillbar -->
+									
+									<div class="skill-container">
+										<div class="skill" id="skill-css">
+											<span class="skill-title">CSS</span>
+											<span class="skill-percent right">75%</span>
+										</div>
+									</div> <!-- end of skillbar -->
+									
+									<div class="skill-container">
+										<div class="skill" id="skill-js">
+											<span class="skill-title">JavaScript</span>
+											<span class="skill-percent right">60%</span>
+										</div>
+									</div> <!-- end of skillbar -->
+									
+									<div class="skill-container">
+										<div class="skill" id="skill-ps">
+											<span class="skill-title">Photoshop</span>
+											<span class="skill-percent right">90%</span>
+										</div>
+									</div> <!-- end of skillbar -->
+									
+									<div class="skill-container">
+										<div class="skill" id="skill-vegas">
+											<span class="skill-title">Sony Vegas</span>
+											<span class="skill-percent right">80%</span>
+										</div>
+									</div> <!-- end of skillbar -->
+									
+								</div>
+								
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+		  
+				<!-- WORKS -->
+				<div class="section scrollspy" id="ss-fifth">
+				
+						<div id="work-enrapture-line"></div>
+						
+						<div class="container">
+						
+							<div class="row">
+								<div class="col s12">
+									<h1 class="white-text center">Works</h1>
 								</div>	
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="parallax"><img src="img/test.png" alt="Unsplashed background img 2"></div>
-			</div>
-			
-			<!-- SKILLS -->
-			<div class="white section scrollspy" id="ss-fourth">
-				<div class="container">
-					<div class="section">
-
-						<div class="row">
-						
-							<div class="col s12 m6 l6 xl6">
 							
-								<h1>Computer Skills<hr class="style12"></h1>
-								<p class="left-align light justify-text">I want to attain a position where I can maximize and utilize my knowledge in programming, developing software, administrating databases, and graphic designing to gratify the company’s needs for its profit, opportunities, and growth.</p>
+							<!-- ENRAPTURE -->
+							<div class="row">
 							
-							</div>
-							
-							<div class="col s12 m6 l6 xl6">
-							
-								<div class="hide-on-small-only">
-								<br><br><br><br>
+								<div class="col s12 m12 l5 xl5">
+									<section>
+										<figure class="stack stack-coverflow" id="work-enrapture">
+											<img src="img/works/enrapture3.png"/>
+											<img src="img/works/enrapture1.png"/>
+											<img src="img/works/enrapture2.png"/>
+										</figure>
+									</section>
 								</div>
+								<div class="col s12 m12 l7 xl7 white-text center-when-small-dev">
+								
+									<div class="work-text-bg">
+									
+										<h2 class="white-text">Enrapture</h2>
+										<blockquote>
+										<p class="justify-text">With a heroic story and an adventure themed game, children who love to play games will enjoy this game. As you play this game, you familiarize yourself with numbers and mathematical equations, and without realizing it, you enhance your mathematical ability and you learn how to solve these mathematical equations repetitively. 
+	The good part about this is, this game challenges the player to solve the equation within 10 seconds and remember the answer as they dodge and avoid the obstacles. Correct numbers doesn’t spawn much often so it challenges the player to remember it for a long time.
+	Answers to the equation varies with the difficulty selected by the player so even higher aged students that struggles and is having a hard time solving simple math equations mentally will be a perfect player in this game.
+										</p>
+										</blockquote>
+										
+										<div id="work-spdr-line"></div>
+										
+										<a href="https://play.google.com/store/apps/details?id=com.neutron.enrapture&hl=en" target="_blank" class="waves-effect waves-light red btn right">View in PlayStore <i class="fa fa-download" aria-hidden="true"></i></a>
+										
+									</div>
+									
+								</div>	
 							
-								<div class="skill-container">
-									<div class="skill" id="skill-cs">
-										<span class="skill-title">C#</span>
-										<span class="skill-percent right">95%</span>
+							</div>
+							
+							
+							<!-- SPDR -->
+							<div class="row">
+							
+								<div class="col s12 m12 l5 xl5">
+									<section>
+										<figure class="stack stack-sideslide" id="work-spdr">
+											<img src="img/works/spdr3.png"/>
+											<img src="img/works/spdr2.png"/>
+											<img src="img/works/spdr1.png"/>
+										</figure>
+									</section>
+								</div>
+								<div class="col s12 m12 l7 xl7 white-text center-when-small-dev">
+								
+									<div class="work-text-bg">
+									
+										<h2 class="white-text">Spdr</h2>
+										<blockquote>
+										<p class="justify-text">We are SPDR Web Design and Development, a website development division of i68 Business Consultancy Services. We are composed students with years of experience in programming and design. From coding simple static websites to corporate dynamic web services, we strive to create the most visually appealing and user friendly site, all according to our client’s specifications. We have developed numerous mobile applications published on Google Play and several responsive websites uploaded to different hosting websites.
+										<br><br>
+										We design websites that are mobile friendly and adapts intelligently on all different screen sizes and resolutions. Whether your users are using a laptop or phone, your website will adapt to every environment while maintaining its clear and concise content.
+										We develop websites that refine and update itself according to the users’ interaction. These websites utilize databases to store relevant information regarding the user and their actions.
+										We devise different mockups and designs for artworks such as icons, logos, and graphical images based on our client’s essential guidelines and requirements. These may be utilized for the client’s website or for the client’s personal use.
+										</p>
+										</blockquote>
+										
+										<a href="https://spdrweb.github.io/" target="_blank" class="waves-effect waves-light red btn left hide-on-small-only">Visit Official Site <i class="fa fa-eye" aria-hidden="true"></i></a>
+										
+										<a href="https://lazygeniuslanz.github.io/spdr/" target="_blank" class="waves-effect waves-light red btn right">Visit My Design <i class="fa fa-eye" aria-hidden="true"></i></a>
+										
 									</div>
-								</div> <!-- end of skillbar -->
-								
-								<div class="skill-container">
-									<div class="skill" id="skill-java">
-										<span class="skill-title">JAVA</span>
-										<span class="skill-percent right">85%</span>
-									</div>
-								</div> <!-- end of skillbar -->
-								
-								<div class="skill-container">
-									<div class="skill" id="skill-sql">
-										<span class="skill-title">SQL</span>
-										<span class="skill-percent right">90%</span>
-									</div>
-								</div> <!-- end of skillbar -->
-								
-								
-								<div class="skill-container">
-									<div class="skill" id="skill-html">
-										<span class="skill-title">HTML</span>
-										<span class="skill-percent right">75%</span>
-									</div>
-								</div> <!-- end of skillbar -->
-								
-								<div class="skill-container">
-									<div class="skill" id="skill-css">
-										<span class="skill-title">CSS</span>
-										<span class="skill-percent right">75%</span>
-									</div>
-								</div> <!-- end of skillbar -->
-								
-								<div class="skill-container">
-									<div class="skill" id="skill-js">
-										<span class="skill-title">JavaScript</span>
-										<span class="skill-percent right">60%</span>
-									</div>
-								</div> <!-- end of skillbar -->
-								
-								<div class="skill-container">
-									<div class="skill" id="skill-ps">
-										<span class="skill-title">Photoshop</span>
-										<span class="skill-percent right">90%</span>
-									</div>
-								</div> <!-- end of skillbar -->
-								
-								<div class="skill-container">
-									<div class="skill" id="skill-vegas">
-										<span class="skill-title">Sony Vegas</span>
-										<span class="skill-percent right">80%</span>
-									</div>
-								</div> <!-- end of skillbar -->
-								
+									
+								</div>	
+							
 							</div>
 							
 						</div>
 						
-						
-					</div>
 				</div>
-			</div>
-	  
-			<!-- WORKS -->
-			<div class="section scrollspy" id="ss-fifth">
-			
-					<div id="work-enrapture-line"></div>
-					
+				
+				<!-- CONTACT -->
+				<div class="section scrollspy valign-wrapper lanz-footer" id="ss-sixth">
 					<div class="container">
-					
-						<div class="row">
-							<div class="col s12">
-								<h1 class="white-text center">Works</h1>
-							</div>	
-						</div>
-						
-						<!-- ENRAPTURE -->
-						<div class="row">
-						
-							<div class="col s12 m12 l5 xl5">
-								<section>
-									<figure class="stack stack-coverflow" id="work-enrapture">
-										<img src="img/works/enrapture3.png"/>
-										<img src="img/works/enrapture1.png"/>
-										<img src="img/works/enrapture2.png"/>
-									</figure>
-								</section>
-							</div>
-							<div class="col s12 m12 l7 xl7 white-text center-when-small-dev">
-							
-								<div class="work-text-bg">
-								
-									<h2 class="white-text">Enrapture</h2>
-									<blockquote>
-									<p class="justify-text">With a heroic story and an adventure themed game, children who love to play games will enjoy this game. As you play this game, you familiarize yourself with numbers and mathematical equations, and without realizing it, you enhance your mathematical ability and you learn how to solve these mathematical equations repetitively. 
-The good part about this is, this game challenges the player to solve the equation within 10 seconds and remember the answer as they dodge and avoid the obstacles. Correct numbers doesn’t spawn much often so it challenges the player to remember it for a long time.
-Answers to the equation varies with the difficulty selected by the player so even higher aged students that struggles and is having a hard time solving simple math equations mentally will be a perfect player in this game.
-									</p>
-									</blockquote>
-									
-									<div id="work-spdr-line"></div>
-									
-									<a href="https://play.google.com/store/apps/details?id=com.neutron.enrapture&hl=en" target="_blank" class="waves-effect waves-light red btn right">View in PlayStore <i class="fa fa-download" aria-hidden="true"></i></a>
-									
-								</div>
-								
-							</div>	
-						
-						</div>
-						
-						
-						<!-- SPDR -->
-						<div class="row">
-						
-							<div class="col s12 m12 l5 xl5">
-								<section>
-									<figure class="stack stack-sideslide" id="work-spdr">
-										<img src="img/works/spdr3.png"/>
-										<img src="img/works/spdr2.png"/>
-										<img src="img/works/spdr1.png"/>
-									</figure>
-								</section>
-							</div>
-							<div class="col s12 m12 l7 xl7 white-text center-when-small-dev">
-							
-								<div class="work-text-bg">
-								
-									<h2 class="white-text">Spdr</h2>
-									<blockquote>
-									<p class="justify-text">We are SPDR Web Design and Development, a website development division of i68 Business Consultancy Services. We are composed students with years of experience in programming and design. From coding simple static websites to corporate dynamic web services, we strive to create the most visually appealing and user friendly site, all according to our client’s specifications. We have developed numerous mobile applications published on Google Play and several responsive websites uploaded to different hosting websites.
-									<br><br>
-									We design websites that are mobile friendly and adapts intelligently on all different screen sizes and resolutions. Whether your users are using a laptop or phone, your website will adapt to every environment while maintaining its clear and concise content.
-									We develop websites that refine and update itself according to the users’ interaction. These websites utilize databases to store relevant information regarding the user and their actions.
-									We devise different mockups and designs for artworks such as icons, logos, and graphical images based on our client’s essential guidelines and requirements. These may be utilized for the client’s website or for the client’s personal use.
-									</p>
-									</blockquote>
-									
-									<a href="https://spdrweb.github.io/" target="_blank" class="waves-effect waves-light red btn left hide-on-small-only">Visit Official Site <i class="fa fa-eye" aria-hidden="true"></i></a>
-									
-									<a href="https://lazygeniuslanz.github.io/spdr/" target="_blank" class="waves-effect waves-light red btn right">Visit My Design <i class="fa fa-eye" aria-hidden="true"></i></a>
-									
-								</div>
-								
-							</div>	
-						
-						</div>
-						
-					</div>
-					
-			</div>
-			
-			<!-- CONTACT -->
-			<div class="section scrollspy valign-wrapper lanz-footer" id="ss-sixth">
-				<div class="container">
 
-						<div class="row">
-							<div class="col s12 center">
-							
-								<h3 class="white-text">Not enough?</h3>
-								<a href="mailto:lanzgio7@gmail.com?Subject=Email%20From%20Site" class="waves-effect waves-light btn transparent z-depth-0 rounded-btn white-text" target="_top"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;Send An E-Mail</a>
+							<div class="row">
+								<div class="col s12 center">
 								
-								<div class="hide-on-med-and-up">
+									<h3 class="white-text">Not enough?</h3>
+									<a href="mailto:lanzgio7@gmail.com?Subject=Email%20From%20Site" class="waves-effect waves-light btn transparent z-depth-0 rounded-btn white-text" target="_top"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;Send An E-Mail</a>
+									
+									<div class="hide-on-med-and-up">
+										<br>
+									</div>
+									
+									<a href="file/Resume.pdf" class="waves-effect waves-light btn transparent z-depth-0 rounded-btn white-text" download><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;&nbsp;View My Resume</a>
+									
+								</div>
+								
+							</div>
+						</div>
+				</div>
+				
+		  
+			</section>
+			
+			<footer>
+				<footer class="page-footer lanz-copyright">
+						
+					<div class="footer-copyright lanz-copyright">
+						
+						<div class="container">
+							<div class="row">
+								<div class="col s12 m8 l8 xl8">
 									<br>
+									<span class="left lanz-copyright-text">© 2017 lazygeniusLanz - All Rights Reserved.</span>
 								</div>
-								
-								<a href="file/Resume.pdf" class="waves-effect waves-light btn transparent z-depth-0 rounded-btn white-text" download><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;&nbsp;View My Resume</a>
-								
+								<div class="col s12 m4 l4 xl4 hide-on-small-only">
+									<br>
+									<span class="right">
+										<a class="social-links" href="https://www.facebook.com/lazygeniusLANZ" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+										<a class="social-links" href="https://twitter.com/lazygeniusLANZ" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+										<a class="social-links" href="https://www.instagram.com/lazygeniuslanz/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+										<a class="social-links" href="https://www.linkedin.com/in/lanz-gio-evann-irlanda-2a370a113/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+									</span>
+								</div>
 							</div>
+							<p>
 							
+							</p>
 						</div>
-					</div>
-			</div>
-			
-	  
-		</section>
-		
-		<footer>
-			<footer class="page-footer lanz-copyright">
-					
-				<div class="footer-copyright lanz-copyright">
-					
-					<div class="container">
-						<div class="row">
-							<div class="col s12 m8 l8 xl8">
-								<br>
-								<span class="left lanz-copyright-text">© 2017 lazygeniusLanz - All Rights Reserved.</span>
-							</div>
-							<div class="col s12 m4 l4 xl4 hide-on-small-only">
-								<br>
-								<span class="right">
-									<a class="social-links" href="https://www.facebook.com/lazygeniusLANZ" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-									&nbsp;&nbsp;&nbsp;&nbsp;
-									<a class="social-links" href="https://twitter.com/lazygeniusLANZ" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-									&nbsp;&nbsp;&nbsp;&nbsp;
-									<a class="social-links" href="https://www.instagram.com/lazygeniuslanz/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-									&nbsp;&nbsp;&nbsp;&nbsp;
-									<a class="social-links" href="https://www.linkedin.com/in/lanz-gio-evann-irlanda-2a370a113/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-								</span>
-							</div>
-						</div>
-						<p>
 						
-						</p>
 					</div>
-					
-				</div>
+				</footer>
 			</footer>
-		</footer>
-		
+			
 		</div>
 		
 		<!--SCRIPTS-->
@@ -478,7 +458,7 @@ Answers to the equation varies with the difficulty selected by the player so eve
 		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.js"></script>
 		<script type="text/javascript" src="js/functions.js"></script>
-		
-		<script src="js/classie.js"></script>
+		<script type="text/javascript" src="js/pausevid.js"></script>
+		<script type="text/javascript" src="js/photostack.js"></script> 
 	</body>
 </html>

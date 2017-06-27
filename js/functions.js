@@ -13,7 +13,7 @@ $(window).load(function() {
 			$('#typed-loaded').addClass("content-show");
 			
 			new TypeWriter($("#typed-loaded"), {
-				"data": ["I>>>ts loaded!| B>>>ye! |"]
+				"data": ["I>>>>ts loaded!|||"]
 			})
 			
 			setTimeout(function() {
@@ -28,9 +28,9 @@ $(window).load(function() {
 										
 					//setTimeout(function() { $(window).scrollTop($(window).scrollTop() - 1); }, 500);
 					
-				}, 100); //remove preloader background
+				}, 10); //remove preloader background
 				/*******************************************/
-			}, 4000); //hide preloader
+			}, 3000); //hide preloader
 			
 		}, 500); //show type loaded
 			
@@ -119,7 +119,7 @@ $(document).ready(function(){
 jQuery(document).ready(function($){
  // Defining a function to set size for #hero 
 	function fullscreen(){
-		jQuery('#hero').css({
+		jQuery('#header-container').css({
             width: jQuery(window).width(),
             height: jQuery(window).height()
         });
