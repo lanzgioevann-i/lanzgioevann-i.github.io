@@ -47,13 +47,25 @@
 		</div>
 
 		<div class="content-hide content-hide2" id="content">
-		
+					
 			<div class="hide-on-med-and-down">
-			<video poster="img/header.png" id="bgvid" playsinline autoplay muted loop>
-				<source src="img/header3.mp4" type="video/mp4">
-				<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
-			</video>
+				<video poster="img/header.png" id="bgvid" playsinline autoplay muted loop>
+					<source src="img/header.mp4" type="video/mp4">
+					<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+				</video>
+				
+				<div class="fixed-action-btn click-to-toggle">
+					<a class="btn-floating btn-large dark">
+						<i class="fa fa-cog" aria-hidden="true"></i>
+					</a>
+					<ul>
+						<li><a class="btn-floating dark" id="btn-pause-vid"><i class="fa fa-pause" aria-hidden="true" id="icon-pause"></i></a></li>
+						<li><a class="btn-floating dark" href="#ss-first"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
 			</div>
+			
+			
 			
 			<header>
 			
@@ -72,16 +84,17 @@
 							<li><a href="file/Resume.pdf" class="dark-text" download>Resume</a></li>
 						</ul>
 						-->
-						<ul id="dropdown1" class="dropdown-content">
+						<ul id="ddWorks" class="dropdown-content">
 							<li><a href="#work-enrapture-line" class="dark-text">Enrapture</a></li>
 							<li><a href="#work-spdr-line" class="dark-text">Spdr</a></li>
 						</ul>
+						
 						<ul id="nav-mobile" class="right hide-on-small-only">
 							<!--<li><a href="#ss-first" class="dark-text hide-on-small-only hide-on-large-only">Home</a></li>-->
 							<li><a href="#ss-second" class="dark-text">About</a></li>
 							<li><a href="#ss-third" class="dark-text">Objective</a></li>
 							<li><a href="#ss-fourth" class="dark-text">Skills</a></li>
-							<li><a href="#" data-activates="dropdown1" data-beloworigin="true" class="dark-text dropdown-button">Works&nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+							<li><a href="#" data-activates="ddWorks" data-beloworigin="true" class="dark-text dropdown-button">Works&nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
 							<!--<li><a href="#ss-sixth" class="dark-text">Contact</a></li>-->
 							<li><a href="file/Resume.pdf" class="waves-effect waves-light btn transparent z-depth-0 rounded-btn dark-text" download>Resume</a></li>
 						</ul>
@@ -120,36 +133,12 @@
 					<div class="container">
 					
 						<div class="row">
+						
 							<div class="col s12 m4 l4 xl4 right-align center-when-small-dev">
+							
 								<h1>Lanz Gio<br>Evann Y. Irlanda</h1>
 								<hr class="style12">
 								<br>
-								<!--
-								<div class="row">
-									<div class="col s6">
-										<img class="responsive-img materialboxed" src="img/me/1.jpg">
-									</div>
-									<div class="col s6">
-										<div class="row">
-											<div class="col s6">
-											<img class="responsive-img materialboxed" src="img/me/2.jpg">
-											</div>
-											<div class="col s6">
-												<img class="responsive-img materialboxed" src="img/me/4.jpg">
-											</div>
-										</div>
-										
-										<div class="row">
-											<div class="col s6">
-											<img class="responsive-img materialboxed" src="img/me/2.jpg">
-											</div>
-											<div class="col s6">
-												<img class="responsive-img materialboxed" src="img/me/4.jpg">
-											</div>
-										</div>
-									</div>
-								</div>
-								-->
 								
 								<div class="row" style="z-index: -1000;">
 									<div class="col s3">
@@ -171,27 +160,21 @@
 								
 								<br>
 								<hr class="style12 hide-on-small-only">
-								<h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. </h5>
-								<h5>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus.</h5>
-								<br>	
-								<!--
-								<div class="row" style="z-index: -1000;">
-									<div class="col s3">
-										<img class="responsive-img materialboxed" src="img/me/1.jpg">
-									</div>
-									<div class="col s3">
-										<img class="responsive-img materialboxed" src="img/me/2.jpg">
-									</div>
-									<div class="col s3">
-										<img class="responsive-img materialboxed" src="img/me/3.jpg">
-									</div>
-									<div class="col s3">
-										<img class="responsive-img materialboxed" src="img/me/4.jpg">
-									</div>
-								</div>
-								-->
+								<h4>About Me</h4>
+								<h5>I'm a passionate worker, fun at times, a kind person, and a goal hugger. I'm always silent but when approached I always try to get along. For my background, I graduated at De La Salle University - Dasmarinas with Bachelor of Science in Computer Science. Software developing became my hobby through out this course and it became my professional interest. </h5>
+								<br>
+								<h4>Experiences</h4>
+								<h5>I became a forum administrator and also the designer of that forum as early as 3rd year high school. These experiences help me build my communication skills and also gave me a little foundation for my career as a computer science student. 
+								<br><br>
+								My internship also gave me my great experiences for software developing skills as I developed queueing systems and inventory systems. This harnessed my programming skills in the corporate world. 
+								<br><br>
+								Last but not the least, I became a web designer from my small group of friends in De La Salle University - Dasmarinas and we established a website for a realty estate company. </h5>
+								<br>
+								<h4>Interest and Hobbies</h4>
+								<h5>My interest is music. I learned how to play guitar during my elementary. I learned playing drum during my senior year in high school. I also plan to learn playing keyboard soon.</h5>
 								
 							</div>
+							
 						</div>
 						
 					</div>
@@ -219,7 +202,7 @@
 								<div class="col s12 m6 l6 xl6">
 								
 									<h2>Computer Skills<hr class="style12"></h2>
-									<p class="left-align light justify-text">I want to attain a position where I can maximize and utilize my knowledge in programming, developing software, administrating databases, and graphic designing to gratify the company’s needs for its profit, opportunities, and growth.</p>
+									<p class="left-align light justify-text">This can summarize my computer skills and such but I'm still working on my knowledge and I'm still learning new things as I go to my career.</p>
 								
 								</div>
 								

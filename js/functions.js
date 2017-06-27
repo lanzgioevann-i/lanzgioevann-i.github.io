@@ -13,7 +13,7 @@ $(window).load(function() {
 			$('#typed-loaded').addClass("content-show");
 			
 			new TypeWriter($("#typed-loaded"), {
-				"data": ["I>>>>ts loaded!|||"]
+				"data": ["I>>>>>ts loaded!|||"]
 			})
 			
 			setTimeout(function() {
@@ -30,7 +30,7 @@ $(window).load(function() {
 					
 				}, 10); //remove preloader background
 				/*******************************************/
-			}, 3000); //hide preloader
+			}, 2500); //hide preloader
 			
 		}, 500); //show type loaded
 			
