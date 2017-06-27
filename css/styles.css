@@ -219,7 +219,7 @@ video {
    
    
 	position: fixed;
-	top: 80vh;
+	top: 20vh;
 	z-index: 10000;
 }
 .preloader5 span {
