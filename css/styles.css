@@ -8,7 +8,7 @@ html{
 	overflow-x: hidden;
 	font-family: GillSans, Calibri, Trebuchet, sans-serif;
 	
-	background: url(../img/header.png) no-repeat center center fixed; 
+	background: url(../img/header3.png) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -47,14 +47,14 @@ video {
 	z-index: -100;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	background: url('../img/header.png') no-repeat;
+	background: url('../img/header3.png') no-repeat;
 	background-size: cover;
 	-webkit-transition: 1s opacity;
 	transition: 1s opacity;
 }
 
 .stopfade { 
-   opacity: .5;
+   opacity: 0;
 }
 
 /* HEADER */
@@ -74,6 +74,12 @@ video {
 	transform: translate(0,-50%);  
 
 }
+
+.header-text{
+	border-left: 5px dotted white;
+	border-right: 5px dotted white;
+}
+
 
 @media only screen and (min-width: 991px) {
     #header-content h1{
@@ -145,6 +151,15 @@ video {
 .dark{
 	background-color: #262626 !important;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+	.hide-on-iphone5-landscape{
+		display: none;
+	}
+}
 
 /* FOOTER */
 .lanz-footer{
@@ -175,7 +190,7 @@ video {
 }
 
 .work-text-bg{
-	background-color: rgba(159,200,255,0.2);
+	background-color: rgba(39,39,39,0.7);
 	border-radius: 5px;
 	padding: 5px 20px 20px 20px;
 	margin-top: 3vh;
@@ -199,6 +214,22 @@ video {
 	display: block;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: #fff; 
+    background: rgba(38,38,38,1);
+}
+
+::selection {
+    color: #fff; 
+    background: rgba(38,38,38,1);
+}
+
+.highlight{
+    display: inline;
+    color: #fff; 
+    background: rgba(38,38,38,1);
+}
+
 .preloader-background {
 	display: flex;
 	align-items: center;
@@ -213,13 +244,12 @@ video {
 }
 
 .preloader5 {
-   display:inline-block;
-   font-size:0px;
-   padding:0px;
-   
-   
+	display:inline-block;
+	font-size:0px;
+	padding:0px;
+
 	position: fixed;
-	top: 80vh;
+	top: 20vh;
 	z-index: 10000;
 }
 .preloader5 span {
@@ -257,7 +287,7 @@ video {
 
 /* NAV BAR */
 #navbar {
-	margin-top: -10vh;
+	margin-top: -100px;
 	position: fixed;
 	top: 0;
 	z-index: 10000;
@@ -266,18 +296,22 @@ video {
 }
 
 #navbar.shownav{
-	margin-top: 0vh;
-	opacity: 0.97;
+	margin-top: 0;
+	opacity: 0.95;
 }
 
 #navbar.hidenav{
-	margin-top: -10vh;
+	margin-top: -100px;
 	opacity: 0;
 }
 
 .navbar-container{
 	margin: 0 auto;
 	width: 85%;
+}
+
+.nav-dropdown-mobile {
+	width: 100% !important;
 }
 
 

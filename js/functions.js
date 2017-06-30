@@ -48,13 +48,19 @@ function navshow(){
 	var div_top = $('#nav-line').offset().top;
 	/*
 	*/
-	if(window_top > div_top && loaded){ 
+	if(window_top > (div_top - 200) && loaded){ 
 		$('#navbar').addClass('shownav');
 		$('#navbar').removeClass('hidenav');
+		
+		$('.fixed-action-btn').addClass('content-show');
+		$('.fixed-action-btn').removeClass('content-hide');
 	}
 	else{
 		$('#navbar').removeClass('shownav');
 		$('#navbar').addClass('hidenav');
+		
+		$('.fixed-action-btn').addClass('content-hide');
+		$('.fixed-action-btn').removeClass('content-show');
 	}
 }
 
