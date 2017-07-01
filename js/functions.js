@@ -48,7 +48,7 @@ function navshow(){
 	var div_top = $('#nav-line').offset().top;
 	/*
 	*/
-	if(window_top > (div_top - 300) && loaded){ 
+	if(window_top > (div_top - 100) && loaded){ 
 		$('#navbar').addClass('shownav');
 		$('#navbar').removeClass('hidenav');
 		
