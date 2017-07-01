@@ -275,6 +275,8 @@ video {
     color: #fff; 
     background: rgba(38,38,38,1);
 	word-spacing: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .preloader-background {
