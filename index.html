@@ -56,7 +56,7 @@
 			<div class="fixed-action-btn click-to-toggle hide-on-small-only content-hide">
 				<a class="btn-floating btn-large dark"><i class="fa fa-cog" aria-hidden="true"></i></a>
 				<ul>
-					<li><a class="btn-floating dark" onclick="Materialize.toast('Play/Pause BG Video', 4000)" id="btn-pause-vid"><i class="fa fa-pause" aria-hidden="true" id="icon-pause"></i></a></li>
+					<li><a class="btn-floating dark" id="btn-pause-vid"><i class="fa fa-pause" aria-hidden="true" id="icon-pause"></i></a></li>
 					<li><a class="btn-floating dark" onclick="Materialize.toast('Going back to top.', 4000)" href="#ss-first"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
@@ -70,13 +70,13 @@
 			<header>
 			
 			<div class="section scrollspy" id="ss-first">
-			
+				<!-- NAV BAR -->
 				<nav id="navbar" class="white">
 					<div class="navbar-container">
 						<div class="nav-wrapper">
 						
-							<div class="hide-on-small-only">
-								<a href="#ss-first" class="brand-logo dark-text left">lgl</a>
+							<div class="hide-on-small-only hide-on-below-800px">
+								<a href="#ss-first" class="brand-logo dark-text left"><img src="img/navicon.png" class="responsive-img navicon"></a>
 								
 								<!-- Dropdown Works -->
 								<ul id="ddWorks" class="dropdown-content">
@@ -85,7 +85,7 @@
 								</ul>
 								
 								<ul id="nav-mobile" class="right hide-on-small-only">
-									<!--<li><a href="#ss-first" class="dark-text hide-on-small-only hide-on-large-only">Home</a></li>-->
+									<li><a href="#ss-first" class="dark-text hide-on-med-only">Home</a></li>
 									<li><a href="#ss-second" class="dark-text">About</a></li>
 									<li><a href="#ss-third" class="dark-text">Objective</a></li>
 									<li><a href="#ss-fourth" class="dark-text">Skills</a></li>
@@ -95,11 +95,12 @@
 								</ul>
 							</div>
 							
-							<div class="hide-on-med-and-up">
-								<a href="#ss-first" class="brand-logo dark-text left">lgl</a>
+							<div class="hide-on-med-and-up show-on-above-800px">
+								<a href="#ss-first" class="brand-logo dark-text left"><img src="img/navicon.png" class="responsive-img navicon"></a>
 								
 								<!-- Dropdown Works -->
 								<ul id="ddSmallDevice" class="dropdown-content nav-dropdown-mobile">
+									<li class="hide-on-iphone5-landscape"><a href="#ss-first" class="dark-text">Home</a></li>
 									<li><a href="#ss-second" class="dark-text">About</a></li>
 									<li><a href="#ss-third" class="dark-text">Objective</a></li>
 									<li><a href="#ss-fourth" class="dark-text">Skills</a></li>
@@ -118,14 +119,14 @@
 					</div>
 				</nav>
 				
-				
+				<!-- HEADER -->
 				<div id="header-container">
 					<div class="header center-align">
 						<div class="container">
 							<div class="header-text">
-								<h1>Lanz Gio Evann Y. Irlanda</h1>
+								<h1 class="BebasBold">Lanz Gio Evann Y. Irlanda</h1>
 							</div>
-							<h5>Software Developer</h5>
+							<h5 class="BebasThin">Software Developer</h5>
 						</div>
 					</div>
 				</div>
@@ -163,7 +164,7 @@
 						
 							<div class="col s12 m4 l4 xl4 right-align center-when-small-dev">
 								
-								<h3>One plus one is <span class="highlight">not the only way</span> to get a two. There isn't only one way to reach your goals.</h3>
+								<h3><span class="highlight">One plus one</span> is not the only way to get a two. There isn't only one way to reach your goals.</h3>
 								<hr class="style12">
 								<br>
 								
@@ -206,7 +207,7 @@
 					</div>
 				</div>
 		  
-				<!-- QUOTE -->
+				<!-- OBJECTIVE -->
 				<div class="parallax-container valign-wrapper section scrollspy" id="ss-third">
 					<div class="row">
 						<div class="col s12 center white-text">
@@ -228,7 +229,7 @@
 								<div class="col s12 m6 l6 xl6">
 								
 									<h2>Computer Skills<hr class="style12"></h2>
-									<p class="left-align light justify-text">This can summarize my computer skills and such but I'm still working on my knowledge and I'm still learning new things as I go to my career.</p>
+									<p class="left-align light justify-text">This can summarize my computer skills and such but I'm still working on my knowledge and I'm still learning new things as I go through my career.</p>
 								
 								</div>
 								
@@ -333,7 +334,7 @@
 								
 									<div class="work-text-bg">
 									
-										<h2 class="white-text">Enrapture</h2>
+										<h3 class="white-text">Enrapture</h3>
 										<blockquote>
 										<p class="justify-text">With a heroic story and an adventure themed game, children who love to play games will enjoy this game. As you play this game, you familiarize yourself with numbers and mathematical equations, and without realizing it, you enhance your mathematical ability and you learn how to solve these mathematical equations repetitively. 
 	The good part about this is, this game challenges the player to solve the equation within 10 seconds and remember the answer as they dodge and avoid the obstacles. Correct numbers doesn’t spawn much often so it challenges the player to remember it for a long time.
@@ -367,7 +368,7 @@
 								
 									<div class="work-text-bg">
 									
-										<h2 class="white-text">Spdr Web</h2>
+										<h3 class="white-text">Spdr Web</h3>
 										<blockquote>
 										<p class="justify-text">We are SPDR Web Design and Development, a website development division of i68 Business Consultancy Services. We are composed students with years of experience in programming and design. From coding simple static websites to corporate dynamic web services, we strive to create the most visually appealing and user friendly site, all according to our client’s specifications. We have developed numerous mobile applications published on Google Play and several responsive websites uploaded to different hosting websites.
 										<br><br>

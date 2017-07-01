@@ -28,10 +28,12 @@ pauseButton.addEventListener("click", function() {
     //pauseButton.innerHTML = "Pause Video";
 	$('#icon-pause').removeClass('fa-play');
 	$('#icon-pause').addClass('fa-pause');
+	Materialize.toast('Background Video Resumed', 2000);
   } else {
     vid.pause();
     //pauseButton.innerHTML = "Paused";
 	$('#icon-pause').removeClass('fa-pause');
 	$('#icon-pause').addClass('fa-play');
+	Materialize.toast('Background Video Paused', 2000);
   }
 })

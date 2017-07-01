@@ -1,12 +1,5 @@
-body{
-	margin:0px 0px; 
-	font-family: 'roboto';
-	overflow-x:hidden;
-}
-
 html{
 	overflow-x: hidden;
-	font-family: GillSans, Calibri, Trebuchet, sans-serif;
 	
 	background: url(../img/header3.png) no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -14,6 +7,13 @@ html{
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+body{
+	margin:0px 0px; 
+	font-family: 'roboto';
+	overflow-x:hidden;
+}
+
 /*
 @media only screen and (min-width: 992px) {
 	html { 
@@ -144,6 +144,31 @@ video {
     border-radius: 5px;
 }
 
+
+.BebasBold{
+  font-family: 'Bebas Bold';
+  letter-spacing: 4px;
+}
+
+.BebasThin{
+  font-family: 'Bebas Thin';
+  letter-spacing: 2px;
+}
+
+@font-face {
+	font-family: 'Bebas Bold';
+	src: url('fonts/BebasNeue Bold.otf') format('opentype'); /* IE9 Compat Modes */
+	src: url('fonts/BebasNeue Bold.otf?#iefix') format('opentype'), /* IE6-IE8 */
+		 url('fonts/BebasNeue Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'Bebas Thin';
+	src: url('fonts/BebasNeue Book.otf') format('opentype'); /* IE9 Compat Modes */
+	src: url('fonts/BebasNeue Book.otf?#iefix') format('opentype'), /* IE6-IE8 */
+		 url('fonts/BebasNeue Book.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
 .dark-text{
 	color: #262626 !important;
 }
@@ -151,6 +176,7 @@ video {
 .dark{
 	background-color: #262626 !important;
 }
+
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
@@ -159,6 +185,26 @@ video {
 	.hide-on-iphone5-landscape{
 		display: none;
 	}
+}
+
+@media only screen and (max-width: 800px) {
+  .hide-on-below-800px {
+    display: none !important;
+  }
+  
+  .show-on-below-800px {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .show-on-above-800px {
+    display: block !important;
+  }
+  
+  .hide-on-above-800px {
+    display: none !important;
+  }
 }
 
 /* FOOTER */
@@ -228,6 +274,7 @@ video {
     display: inline;
     color: #fff; 
     background: rgba(38,38,38,1);
+	word-spacing: 10px;
 }
 
 .preloader-background {
@@ -296,7 +343,7 @@ video {
 }
 
 #navbar.shownav{
-	margin-top: 0;
+	margin-top: 0px;
 	opacity: 0.95;
 }
 
@@ -312,6 +359,10 @@ video {
 
 .nav-dropdown-mobile {
 	width: 100% !important;
+}
+
+.navicon{
+	margin-top: 5px;
 }
 
 
