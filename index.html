@@ -7,6 +7,7 @@
 		
 		<!--Import Google Icon Font
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		
 		<!--Import materialize.css-->
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -64,96 +65,78 @@
 				<a class="btn-floating dark" onclick="Materialize.toast('Going back to top.', 1000)" href="#ss-first"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 			</div>
 			
-			
-			
-			<header>
-			
-			<div class="section scrollspy" id="ss-first">
-				<!-- NAV BAR -->
-				<nav id="navbar" class="white">
-					<div class="navbar-container">
-						<div class="nav-wrapper">
+			<!-- NAV BAR -->
+			<nav id="navbar" class="white">
+				<div class="navbar-container">
+					<div class="nav-wrapper">
+						<a href="#ss-first" class="brand-logo dark-text left hide-on-med-and-up"><img src="img/navicon-vsm.png" class="navicon"></a> <!-- SMALL -->
+						<a href="#ss-first" class="brand-logo dark-text left hide-on-small-only hide-on-large-only"><img src="img/navicon-sm.png" class="navicon"></a> <!-- MED -->
+						<a href="#ss-first" class="brand-logo dark-text left hide-on-med-and-down"><img src="img/navicon.png" class="navicon"></a> <!-- LARGE -->
 						
-							<div class="hide-on-small-only hide-on-below-800px">
-								<a href="#ss-first" class="brand-logo dark-text left"><img src="img/navicon.png" class="navicon"></a>
-								
-								<!-- Dropdown Works -->
-								<ul id="ddWorks" class="dropdown-content">
-									<li><a href="#work-enrapture-line" class="dark-text">Enrapture</a></li>
-									<li><a href="#work-spdr-line" class="dark-text">Spdr</a></li>
-								</ul>
-								
-								<ul id="nav-mobile" class="right hide-on-small-only">
-									<li><a href="#ss-first" class="dark-text hide-on-med-only">Home</a></li>
-									<li><a href="#ss-second" class="dark-text">About</a></li>
-									<!--<li><a href="#ss-third" class="dark-text">Objective</a></li>-->
-									<li><a href="#ss-fourth" class="dark-text">Skills</a></li>
-									<li><a href="#" data-activates="ddWorks" data-beloworigin="true" data-stopPropagation="true" class="dark-text dropdown-button">Works&nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-									<li><a href="#ss-sixth" class="dark-text">Contact</a></li>
-									<li><a href="file/Resume.pdf" class="waves-effect waves-light btn transparent z-depth-0 rounded-btn dark-text" download>Resume</a></li>
-								</ul>
-							</div>
+						<div class="hide-on-small-only hide-on-below-800px">
 							
-							<div class="hide-on-med-and-up show-on-above-800px">
-								<a href="#ss-first" class="brand-logo dark-text left"><img src="img/navicon-sm.png" class="navicon"></a>
-								
-								<!-- Dropdown Works -->
-								<ul id="ddSmallDevice" class="dropdown-content nav-dropdown-mobile">
-									<li class="hide-on-iphone5-landscape"><a href="#ss-first" class="dark-text">Home</a></li>
-									<li><a href="#ss-second" class="dark-text">About</a></li>
-									<!--<li><a href="#ss-third" class="dark-text">Objective</a></li>-->
-									<li><a href="#ss-fourth" class="dark-text">Skills</a></li>
-									<li><a href="#ss-fifth" class="dark-text">Works</a></li>
-									<li><a href="#ss-sixth" class="dark-text">Contact</a></li>
-									<li><a href="file/Resume.pdf" class="dark-text" download><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;&nbsp;Resume</a></li>
-								</ul>
-								
-								<ul id="nav-mobile" class="right">
-									<li><a href="#" data-activates="ddSmallDevice" data-inDuration="150" data-outDuration="150" class="dark-text dropdown-button"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-									<!--<li><a href="#ss-sixth" class="dark-text">Contact</a></li>-->
-								</ul>
-							</div>
+							<!-- Dropdown Works -->
+							<ul id="ddWorks" class="dropdown-content">
+								<li><a href="#work-enrapture-line" class="dark-text">Enrapture</a></li>
+								<li><a href="#work-spdr-line" class="dark-text">Spdr</a></li>
+							</ul>
+							
+							<ul id="nav-mobile" class="right hide-on-small-only">
+								<li><a href="#ss-first" class="dark-text hide-on-med-only">Home</a></li>
+								<li><a href="#ss-second" class="dark-text">About</a></li>
+								<!--<li><a href="#ss-third" class="dark-text">Objective</a></li>-->
+								<li><a href="#ss-fourth" class="dark-text">Skills</a></li>
+								<li><a href="#" data-activates="ddWorks" data-beloworigin="true" data-stopPropagation="true" class="dark-text dropdown-button">Works&nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+								<li><a href="#ss-sixth" class="dark-text">Contact</a></li>
+								<li><a href="file/Resume.pdf" class="waves-effect waves-light btn transparent z-depth-0 rounded-btn dark-text" download>Resume</a></li>
+							</ul>
 							
 						</div>
-					</div>
-				</nav>
-				
-				<!-- HEADER -->
-				<div id="header-container">
-					<div class="header center-align">
-						<div class="container">
-							<div class="header-text">
-								<h1 class="BebasBold">Lanz Gio Evann Y. Irlanda</h1>
-							</div>
-							<h5 class="BebasThin"><span class="highlight">Software Developer</span></h5>
+						
+						<div class="hide-on-med-and-up show-on-above-800px">
+							
+							<!-- Dropdown Works -->
+							<ul id="ddSmallDevice" class="dropdown-content nav-dropdown-mobile">
+								<li class="hide-on-iphone5-landscape"><a href="#ss-first" class="dark-text">Home</a></li>
+								<li><a href="#ss-second" class="dark-text">About</a></li>
+								<!--<li><a href="#ss-third" class="dark-text">Objective</a></li>-->
+								<li><a href="#ss-fourth" class="dark-text">Skills</a></li>
+								<li><a href="#ss-fifth" class="dark-text">Works</a></li>
+								<li><a href="#ss-sixth" class="dark-text">Contact</a></li>
+								<li><a href="file/Resume.pdf" class="dark-text" download><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;&nbsp;Resume</a></li>
+							</ul>
+							
+							<ul id="nav-mobile" class="right">
+								<li><a href="#" data-activates="ddSmallDevice" data-inDuration="150" data-outDuration="150" class="dark-text dropdown-button"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+								<!--<li><a href="#ss-sixth" class="dark-text">Contact</a></li>-->
+							</ul>
+							
 						</div>
+						
 					</div>
 				</div>
-				<div id="nav-line"></div>
-				<!--
-				<div class="section scrollspy valign-wrapper">
-					<div class="container">
-
-							<div class="row">
-								<div id="header-content">
-									<div class="col s12 m5 l5 xl5 right-align blue-text hide-on-small-only">
-										<img src="img/lanz-head.png" class="responsive-img">
-									</div>
-									<div class="col s12 m7 l7 xl7 white-text center-when-small-dev">
-										<h1>One plus one is not the only way to get a two. There isn't only one way to reach your goals.</h1>
-									</div>
-								</div>
-							</div>
-					</div>
-				</div>
-				-->
-				
-			</div>
+			</nav>
 			
-			</header>
+			<div id="nav-line"></div>
+			
 			
 			<section>
 			
+				<!-- HEADER -->
+				<div id="header-container">
+					<div class="scrollspy" id="ss-first">
+						<div class="header center-align">
+							<div class="container">
+							
+								<div class="header-text">
+									<h1 class="BebasBold">Lanz Gio Evann Y. Irlanda</h1>
+								</div>
+								<h5 class="BebasThin"><span class="highlight">Software Developer</span></h5>
+								
+							</div>
+						</div>
+					</div>
+				</div>
 			
 				<!-- ABOUT ME -->
 				<div class="white section scrollspy" id="ss-second">
@@ -183,6 +166,7 @@
 								</div>
 								
 							</div>
+							
 							<div class="col s12 m8 l8 xl8 justify-text center-when-small-dev">
 								
 								<hr class="style12 hide-on-small-only">
@@ -204,13 +188,13 @@
 						</div>
 						
 					</div>
+					
 				</div>
 		  
 				<!-- PARALLAX -->
-				<div class="parallax-container valign-wrapper section scrollspy" id="ss-third">
+				<div class="parallax-container valign-wrapper scrollspy" id="ss-third">
 					<div class="row">
 						<div class="col s12 center white-text">
-							<h3><i class="mdi-content-send brown-text"></i></h3>
 							<h1 class="flow-text white-text">Once I set my eyes on something, I will do everything to accomplish it. I don't follow my dreams, instead, I chase them. Personality wise, I'm passive but easy to work with. I continuously develop myself in this field. And most of all, I love programming.</h1>
 						</div>
 					</div>
@@ -219,7 +203,7 @@
 				</div>
 				
 				<!-- SKILLS -->
-				<div class="white section scrollspy" id="ss-fourth">
+				<div class="white scrollspy" id="ss-fourth">
 					<div class="container">
 						<div class="section">
 
@@ -305,7 +289,7 @@
 				</div>
 		  
 				<!-- WORKS -->
-				<div class="section scrollspy" id="ss-fifth">
+				<div class="scrollspy" id="ss-fifth">
 				
 						<div class="container">
 						
@@ -315,7 +299,7 @@
 								</div>	
 							</div>
 							
-							<div id="work-enrapture-line" class="section scrollspy"></div>
+							<div id="work-enrapture-line" class="scrollspy"></div>
 							
 							<!-- ENRAPTURE -->
 							<div class="row">
@@ -349,7 +333,7 @@
 							
 							</div>
 							
-							<div id="work-spdr-line" class="section scrollspy"></div>
+							<div id="work-spdr-line" class="scrollspy"></div>
 							
 							<!-- SPDR -->
 							<div class="row">
@@ -392,7 +376,7 @@
 				</div>
 				
 				<!-- CONTACT -->
-				<div class="section scrollspy valign-wrapper lanz-footer" id="ss-sixth">
+				<div class="scrollspy valign-wrapper lanz-footer" id="ss-sixth">
 					<div class="container">
 
 						<div class="row">
@@ -413,8 +397,7 @@
 						<div class="row hide-on-large-only">
 							<div class="col s12 center">
 							
-								<h3 class="white-text"></h3>
-								<span class="white-text">
+								<h5 class="white-text">
 									<a class="white-text" href="https://www.facebook.com/lazygeniusLANZ" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 									&nbsp;&nbsp;&nbsp;&nbsp;
 									<a class="white-text" href="https://twitter.com/lazygeniusLANZ" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
@@ -422,7 +405,7 @@
 									<a class="white-text" href="https://www.instagram.com/lazygeniuslanz/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 									&nbsp;&nbsp;&nbsp;&nbsp;
 									<a class="white-text" href="https://www.linkedin.com/in/lanz-gio-evann-irlanda-2a370a113/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-								</span>
+								</h5>
 								
 							</div>
 						</div>
