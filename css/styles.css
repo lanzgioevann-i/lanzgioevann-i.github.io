@@ -9,7 +9,7 @@ body{
 	overflow-x:hidden;
 	
 	
-	background: url(../'img/header3.png') center center cover no-repeat fixed;
+	background: url('../img/header3.png') center center cover no-repeat fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -20,7 +20,7 @@ body{
   body {
     /* The file size of this background image is 93% smaller
      * to improve page load speed on mobile internet connections */
-    background-image: url(images/background-photo-mobile-devices.jpg);
+    background-image: url('../img/background-photo-mobile-devices.jpg');
   }
 	}
 /*
