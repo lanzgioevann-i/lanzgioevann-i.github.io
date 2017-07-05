@@ -8,7 +8,6 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	overflow-x:hidden;
 	
-	
 	background: url(../img/header3.png) center center no-repeat fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -16,14 +15,6 @@ body{
 	background-size: cover;
 }
 
-
-@media only screen and (max-width: 767px) {
-  body {
-    /* The file size of this background image is 93% smaller
-     * to improve page load speed on mobile internet connections */
-    background-image: url(../img/background-photo-mobile-devices.jpg);
-  }
-}
 /*
 @media only screen and (min-width: 992px) {
 	html { 
@@ -61,6 +52,31 @@ video {
 	background-size: cover;
 	-webkit-transition: 1s opacity;
 	transition: 1s opacity;
+}
+
+/* This used to work for parent element of button divs */
+
+/* But it is not enough now, below dont hide play button parent div */
+
+#bgvid::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+
+#bgvid::--webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+/* This one works */
+
+#bgvid::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
 }
 
 .stopfade { 
