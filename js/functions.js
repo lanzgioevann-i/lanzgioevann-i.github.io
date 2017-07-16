@@ -107,10 +107,64 @@ function workshow(){
 	}
 }
 
+function activenav(){
+	//active nav
+	var window_top = $(window).scrollTop();
+	
+	var home_top = $('#ss-first').offset().top - 100;
+	var about_top = $('#ss-second').offset().top - 100;
+	var skills_top = $('#ss-fourth').offset().top - 100;
+	var works_top = $('#ss-fifth').offset().top - 100;
+	var contact_top = $('#ss-sixth').offset().top - 100;
+	/**/
+	if(window_top > home_top && window_top < about_top){
+		$('#nav-link-home').addClass('active');
+		
+		$('#nav-link-about').removeClass('active');
+		$('#nav-link-skills').removeClass('active');
+		$('#nav-link-works').removeClass('active');
+		$('#nav-link-contact').removeClass('active');
+	}
+	else if(window_top > about_top && window_top < skills_top){
+		$('#nav-link-about').addClass('active');
+		
+		$('#nav-link-home').removeClass('active');
+		$('#nav-link-skills').removeClass('active');
+		$('#nav-link-works').removeClass('active');
+		$('#nav-link-contact').removeClass('active');
+	}
+	else if(window_top > skills_top && window_top < works_top){
+		$('#nav-link-skills').addClass('active');
+		
+		$('#nav-link-home').removeClass('active');
+		$('#nav-link-about').removeClass('active');
+		$('#nav-link-works').removeClass('active');
+		$('#nav-link-contact').removeClass('active');
+	}
+	else if(window_top > works_top && window_top < contact_top){
+		$('#nav-link-works').addClass('active');
+		
+		$('#nav-link-home').removeClass('active');
+		$('#nav-link-about').removeClass('active');
+		$('#nav-link-skills').removeClass('active');
+		$('#nav-link-contact').removeClass('active');
+	}
+	else if(window_top > contact_top){
+		$('#nav-link-contact').addClass('active');
+		//alert('yay');
+		$('#nav-link-home').removeClass('active');
+		$('#nav-link-about').removeClass('active');
+		$('#nav-link-skills').removeClass('active');
+		$('#nav-link-works').removeClass('active');
+	}
+	
+}
+
 $(function() { 
   $(window).scroll(navshow);
   $(window).scroll(skillshow);
   $(window).scroll(workshow);
+  $(window).scroll(activenav);
 });
 
 /* PARALLAX */

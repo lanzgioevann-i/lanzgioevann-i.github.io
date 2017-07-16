@@ -393,6 +393,12 @@ video {
 	opacity: 0;
 }
 
+.active {
+	-webkit-transition: 1s all ease-out;
+    -moz-transition: 1s all ease-out;
+    transition: 1s all ease-out;
+}
+
 .navbar-container{
 	margin: 0 auto;
 	width: 85%;
