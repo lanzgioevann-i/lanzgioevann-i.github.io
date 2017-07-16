@@ -393,7 +393,7 @@ video {
 	opacity: 0;
 }
 
-.active {
+#nav-mobile .active li{
 	-webkit-transition: 1s all ease-out;
     -moz-transition: 1s all ease-out;
     transition: 1s all ease-out;
