@@ -105,6 +105,15 @@ function workshow(){
 	else{
 		$('#work-spdr').removeClass('active');
 	}
+	
+	var anb_top = $('#work-anb-line').offset().top;
+	
+	if(window_top > (anb_top - 300) && loaded){
+		$('#work-anb').addClass('active');
+	}
+	else{
+		$('#work-anb').removeClass('active');
+	}
 }
 
 function activenav(){
