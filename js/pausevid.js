@@ -5,7 +5,6 @@ if (window.matchMedia('(prefers-reduced-motion)').matches) {
     vid.removeAttribute("autoplay");
     vid.pause();
     pauseButton.innerHTML = "Paused";
-	alert('yay');
 }
 
 function vidFade() {
